@@ -17,7 +17,6 @@ func initializeHelperClients() {
 		Password: "",
 		DB:       0,
   })
-  CacheClient.FlushDB()
 }
 
 func initializeServer() {
