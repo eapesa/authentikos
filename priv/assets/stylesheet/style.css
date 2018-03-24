@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fenix');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Roboto', helvetica neue, sans-serif;
+  font-family: 'Fenix', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  white-space-collapse: discard;
+}
+
+body {
+  height: inherit;
+  width: inherit;
+}
+
+h2 {
+  color: #383838;
+}
+
+.header {
+  width: 100%;
+  padding-left: 16px;
+  height: 84px;
+  font-family: 'Fenix';
+  font-size: 48px;
+  line-height: 96px;
+  vertical-align: bottom;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #383838;
+  border-bottom: 1px #383838 solid;
+  bottom: 24px;
+}
+
+.body {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 72px;
+}
+
+.function {
+  width: 400px;
+  height: 320px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.function, .vertical {
+  display: inline-block;
+}
+
+.vertical {
+  width: 0px;
+  height: 320px;
+  border-right: 1px #A9A9A9 solid;
+  border-left: 1px #A9A9A9 solid;
+}
