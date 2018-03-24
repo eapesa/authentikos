@@ -7,24 +7,40 @@
 
 </head>
 <body>
-  <div class="header">
-    <div class="header-title">Authentikos</div>
-  </div>
-  <div class="body">
-    <div class="function" id="generate">
-      <h2>GENERATE QR CODE</h2>
-      <div class="body-generate">
-        <button>Generate</button>
-      </div>
+  <div id="app">
+    <div class="header">
+      <div class="header-title">{{ title }}</div>
     </div>
-    <div class="vertical"></div>
-    <div class="function" id="verify">
-      <h2>VERIFY CODE</h2>
-      <div class="body-verify">
-        <button>Verify</button>
+    <div class="body">
+      <div class="function" id="generate">
+        <h2>GENERATE QR CODE</h2>
+        <div class="function-input">
+          <input type="text" placeholder="email" v-model="identity" />
+          <button v-on:click="generateQrCode">Generate</button>
+        </div>
+        <hr/>
+        <div class="generate-output">
+          <div class="output-container">
+            <img :src="qrCode">
+          </div>
+        </div>
+      </div>
+      <div class="vertical"></div>
+      <div class="function" id="verify">
+        <h2>VERIFY CODE</h2>
+        <div class="function-input">
+          <input type="text" placeholder="email" />
+          <button>Verify</button>
+        </div>
+        <hr/>
+        <div class="generate-output">
+          <div>DISPLAY RESULT</div>
+        </div>
       </div>
     </div>
   </div>
   <script src="/assets/js/ext/vue.min.js"></script>
+  <script src="/assets/js/ext/vue-resource.min.js"></script>
+  <script src="/assets/js/index.js"></script>
 </body>
 </html>

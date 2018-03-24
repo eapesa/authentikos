@@ -13,12 +13,10 @@ html {
 }
 
 body {
-  height: inherit;
-  width: inherit;
-}
-
-h2 {
-  color: #383838;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -37,7 +35,7 @@ h2 {
 }
 
 .body {
-  width: 100%;
+  width: inherit;
   margin-right: auto;
   margin-left: auto;
   margin-top: 72px;
@@ -45,19 +43,50 @@ h2 {
 
 .function {
   width: 400px;
-  height: 320px;
   text-align: center;
-  display: inline-block;
   vertical-align: top;
 }
 
-.function, .vertical {
-  display: inline-block;
+.function > h2 {
+  color: #505050;
+  margin-bottom: 48px;
 }
 
 .vertical {
   width: 0px;
-  height: 320px;
   border-right: 1px #A9A9A9 solid;
   border-left: 1px #A9A9A9 solid;
+}
+
+.function, .vertical {
+  height: 480px;
+  display: inline-block;
+}
+
+.function > hr {
+  /* margin-top: 16px;
+  margin-bottom: 16px; */
+  margin: 32px auto;
+  width: 80%;
+  border: 0.75px #D3D3D3 solid;
+}
+
+.function-input > input, .function-input > button {
+  font-size: 14px;
+  font-family: 'Lato';
+  line-height: 32px;
+  color: #383838;
+}
+
+.function-input > input {
+  height: 32px;
+  width: 200px;
+  margin-right: 12px;
+}
+
+.function-input > button {
+  height: 38px;
+  width: 72px;
+  padding: 0;
+  cursor: pointer;
 }
