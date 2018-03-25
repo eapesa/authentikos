@@ -15,10 +15,10 @@
       <div class="function" id="generate">
         <h2>GENERATE QR CODE</h2>
         <div class="function-input">
-          <input type="text" placeholder="email" v-model="identity" />
+          <input type="text" placeholder="email" v-model="generateInputs.account_name" />
           <button v-on:click="generateQrCode">Generate</button>
         </div>
-        <hr/>
+        <!-- <hr/> -->
         <div class="generate-output">
           <div class="output-container">
             <img :src="qrCode">
@@ -29,12 +29,17 @@
       <div class="function" id="verify">
         <h2>VERIFY CODE</h2>
         <div class="function-input">
-          <input type="text" placeholder="email" />
-          <button>Verify</button>
+          <input type="text" placeholder="email" id="input-email" v-model="verifyInputs.account_name" />
+          <input type="text" placeholder="passcode" id="input-passcode" v-model="verifyInputs.passcode" />
+          <br/>
+          <button v-on:click="verifyQrCode">Verify</button>
         </div>
-        <hr/>
+        <!-- <hr/> -->
         <div class="generate-output">
-          <div>DISPLAY RESULT</div>
+          <div class="output-container" v-if="flags.checkResult">
+            <img src="/assets/miscs/ok-96.png" v-if="flags.passcode"/>
+            <img src="/assets/miscs/x-96.png" v-else/>
+          </div>
         </div>
       </div>
     </div>

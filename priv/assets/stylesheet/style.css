@@ -90,3 +90,21 @@ body {
   padding: 0;
   cursor: pointer;
 }
+
+#input-passcode, .function-input > br + button {
+  margin-top: 12px;
+}
+
+#generate > .generate-output > .output-container {
+  margin-top: 48px;
+}
+
+#verify > .generate-output > .output-container {
+  margin-top: 18px;
+}
+
+#verify > .generate-output > .output-container > img {
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
