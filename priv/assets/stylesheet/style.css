@@ -102,9 +102,3 @@ body {
 #verify > .generate-output > .output-container {
   margin-top: 18px;
 }
-
-#verify > .generate-output > .output-container > img {
-  transition-property: background;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-}
