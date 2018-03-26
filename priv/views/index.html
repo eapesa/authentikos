@@ -16,7 +16,9 @@
         <h2>GENERATE QR CODE</h2>
         <div class="function-input">
           <input type="text" placeholder="email" v-model="generateInputs.account_name" />
+          <br>
           <button v-on:click="generateQrCode">Generate</button>
+          <button v-on:click="clearOutput($event, 'generate')">Clear</button>
         </div>
         <!-- <hr/> -->
         <div class="generate-output">
@@ -33,6 +35,7 @@
           <input type="text" placeholder="passcode" id="input-passcode" v-model="verifyInputs.passcode" />
           <br/>
           <button v-on:click="verifyQrCode">Verify</button>
+          <button v-on:click="clearOutput($event, 'verify')">Clear</button>
         </div>
         <!-- <hr/> -->
         <div class="generate-output">

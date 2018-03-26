@@ -88,6 +88,16 @@ body {
   height: 38px;
   width: 72px;
   padding: 0;
+  border: 0;
+  background-color: #D3D3D3;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.function-input > button:hover {
+  background-color: #383838;
+  border: 0;
+  color: #D3D3D3;
   cursor: pointer;
 }
 
