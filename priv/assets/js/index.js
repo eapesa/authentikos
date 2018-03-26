@@ -46,6 +46,15 @@ new Vue({
             this.flags.passcode = true;
           }
         })
+    },
+
+    clearOutput: function(e, type) {
+      if (type === "generate") {
+        this.qrCode = "";
+      } else if (type === "verify") {
+        this.flags.checkResult = false;
+      }
     }
+
   }
 })
