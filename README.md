@@ -10,16 +10,16 @@ Backend API written in [Go](https://golang.org/).
 Frontend managed by [Vue.js](https://vuejs.org/v2/guide/#Getting-Started).
 
 
-# Dependencies
+### Dependencies
 
 * [OTP](https://github.com/pquerna/otp)
 * [Go-Redis](https://github.com/go-redis/redis)
 * Vue.js resource files (already included in `priv/assets/js/ext`)
 
 
-# Installation
+### Installation
 
-- Ensure `go` is properly configured especially `$GOROOT` and `$GOPATH`.
+- Ensure `go` is properly configured especially `$GOROOT` and `$GOPATH`
 - Install `go` dependencies:
 
 ```
