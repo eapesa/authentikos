@@ -3,10 +3,11 @@ package main
 import(
   "fmt"
   "net/http"
-  "github.com/pquerna/otp/totp"
   "bytes"
   "image/png"
+
   "github.com/go-redis/redis"
+  "github.com/pquerna/otp/totp"
 )
 
 var CacheClient *redis.Client
