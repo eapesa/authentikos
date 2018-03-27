@@ -54,8 +54,8 @@ body {
 
 .vertical {
   width: 0px;
-  border-right: 1px #A9A9A9 solid;
-  border-left: 1px #A9A9A9 solid;
+  border-right: 0.5px #DCDCDC solid;
+  border-left: 0.5px #DCDCDC solid;
 }
 
 .function, .vertical {
@@ -80,8 +80,8 @@ body {
 
 .function-input > input {
   height: 32px;
-  width: 200px;
-  margin-right: 12px;
+  width: 238px;
+  /* margin-right: 12px; */
 }
 
 .function-input > button {
